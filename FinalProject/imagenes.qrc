@@ -1,2 +1,14 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>imagenes/cientifico2.jpg</file>
+        <file>imagenes/cientificos.gif</file>
+        <file>imagenes/enemigo1.png</file>
+        <file>imagenes/fondo_inicio.png</file>
+        <file>imagenes/fondo1.jpg</file>
+        <file>imagenes/granada.png</file>
+        <file>imagenes/obstaculo1.jpg</file>
+        <file>imagenes/obstaculo2.jpg</file>
+        <file>imagenes/proyectil.png</file>
+        <file>imagenes/soldado.png</file>
+    </qresource>
+</RCC>
