@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     scene = new QGraphicsScene;
     ui->graphicsView->setScene(scene);
-    QImage fondo(":/imagenes/fondo1.jpg");
+    QImage fondo(":/imagenes/fondovisual.png");
     QBrush brochaF(fondo);
 
     ui->graphicsView->setBackgroundBrush(brochaF);
