@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "pared.h"
 #include "jugador.h"
+#include "enemigos.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -35,6 +36,10 @@ private:
     QTimer *timer;
     jugador *mijugador;
     QVector<pared*> muros;  // Vector de punteros a pared
+    QList<enemigos *> listaEnemigos;
+    enemigos *soldado;
+    QPointF soldadoPos;
+
     bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
 
 };
