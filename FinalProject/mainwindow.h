@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "pared.h"
 #include "jugador.h"
 
 QT_BEGIN_NAMESPACE
@@ -33,6 +33,7 @@ private:
     QGraphicsScene *scene;
     QTimer *timer;
     jugador *mijugador;
+    QVector<pared*> muros;  // Vector de punteros a pared
 
 };
 

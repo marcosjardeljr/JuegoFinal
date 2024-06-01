@@ -10,5 +10,10 @@
         <file>imagenes/proyectil.png</file>
         <file>imagenes/soldado.png</file>
         <file>imagenes/fondovisual.png</file>
+        <file>imagenes/fondo_circuito.jpg</file>
+        <file>imagenes/cientifico.jpg</file>
+        <file>imagenes/man.jpg</file>
+        <file>imagenes/manes.png</file>
+        <file>imagenes/cientifico recortado.jpg</file>
     </qresource>
 </RCC>
