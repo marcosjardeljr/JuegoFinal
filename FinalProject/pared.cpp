@@ -18,7 +18,7 @@ QRectF pared::boundingRect() const
 void pared::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     // Definir la ruta del sprite
-    QString spritePath = ":/imagenes/obstaculo2.jpg"; // Reemplaza con la ruta real de tu sprite
+    QString spritePath = ":/imagenes/obstaculo1.jpg"; // Reemplaza con la ruta real de tu sprite
 
     // Cargar el sprite
     QImage sprite(spritePath);
