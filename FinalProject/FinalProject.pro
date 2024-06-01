@@ -13,13 +13,15 @@ SOURCES += \
     jugador.cpp \
     main.cpp \
     mainwindow.cpp \
-    movimientos.cpp
+    movimientos.cpp \
+    pared.cpp
 
 HEADERS += \
     enemigos.h \
     jugador.h \
     mainwindow.h \
-    movimientos.h
+    movimientos.h \
+    pared.h
 
 FORMS += \
     mainwindow.ui

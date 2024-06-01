@@ -3,7 +3,7 @@
 jugador::jugador(QGraphicsScene* scene, QObject *parent) : QObject(parent), QGraphicsPixmapItem()
 {
     setScale(0.1);
-    setPos(50, 70);
+    setPos(70, 70);
     setup();
     scene->addItem(this);
 }
