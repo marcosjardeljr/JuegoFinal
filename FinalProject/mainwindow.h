@@ -40,6 +40,19 @@ private:
     enemigos *soldado;
     QPointF soldadoPos;
 
+    enemigos *avion;
+    QPointF avionPos;
+    enemigos *bit;
+    QPointF bitPos;
+    enemigos *bitone;
+    QPointF bitonePos;
+    enemigos *trampa;
+    QPointF trampaPos;
+    enemigos *granada;
+    QPointF granadaPos;
+    enemigos *canon;
+    QPointF canonPos;
+
     bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
 
 };
