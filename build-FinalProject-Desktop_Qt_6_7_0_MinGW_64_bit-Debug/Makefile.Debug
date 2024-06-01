@@ -136,10 +136,13 @@ debug/qrc_imagenes.cpp: ../FinalProject/imagenes.qrc \
 		../FinalProject/imagenes/proyectil.png \
 		../FinalProject/imagenes/enemigo1.png \
 		../FinalProject/imagenes/fondovisual.png \
+		../FinalProject/imagenes/cientifico\ recortado.jpg \
 		../FinalProject/imagenes/fondo_circuito.jpg \
+		../FinalProject/imagenes/image001.png \
 		../FinalProject/imagenes/granada.png \
 		../FinalProject/imagenes/soldado.png \
 		../FinalProject/imagenes/cientifico.jpg \
+		../FinalProject/imagenes/Imagen1.jpg \
 		../FinalProject/imagenes/fondo1.jpg \
 		../FinalProject/imagenes/cientificos.gif \
 		../FinalProject/imagenes/obstaculo1.jpg \
@@ -545,14 +548,19 @@ debug/moc_mainwindow.cpp: ../FinalProject/mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../FinalProject/jugador.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		../FinalProject/pared.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsItem \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
+		../FinalProject/jugador.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsScene \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.0/mingw_64/bin/moc.exe
 	C:\Qt\6.7.0\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/Usuario/Documents/Juan David Escalante/info 2/juego final/JuegoFinal/build-FinalProject-Desktop_Qt_6_7_0_MinGW_64_bit-Debug/debug/moc_predefs.h" -IC:/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -I"C:/Users/Usuario/Documents/Juan David Escalante/info 2/juego final/JuegoFinal/FinalProject" -IC:/Qt/6.7.0/mingw_64/include -IC:/Qt/6.7.0/mingw_64/include/QtWidgets -IC:/Qt/6.7.0/mingw_64/include/QtGui -IC:/Qt/6.7.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -970,14 +978,19 @@ debug/main.o: ../FinalProject/main.cpp ../FinalProject/mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../FinalProject/jugador.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		../FinalProject/pared.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsItem \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
+		../FinalProject/jugador.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsScene \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSplashScreen \
@@ -1177,22 +1190,25 @@ debug/mainwindow.o: ../FinalProject/mainwindow.cpp ../FinalProject/mainwindow.h 
 		C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		../FinalProject/jugador.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+		../FinalProject/pared.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsItem \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
+		../FinalProject/jugador.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/QPixmap \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsScene \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGraphicsView \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/qpainter.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
