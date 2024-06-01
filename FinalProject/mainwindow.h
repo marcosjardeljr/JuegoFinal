@@ -21,7 +21,8 @@ public:
 
 
 private slots:
-    //void keyPressEvent(QKeyEvent *evento);
+    void keyPressEvent(QKeyEvent *evento);
+    void moverJugador();
 
 
 signals:
