@@ -15,5 +15,7 @@
         <file>imagenes/man.jpg</file>
         <file>imagenes/manes.png</file>
         <file>imagenes/cientifico recortado.jpg</file>
+        <file>imagenes/Imagen1.jpg</file>
+        <file>imagenes/image001.png</file>
     </qresource>
 </RCC>
