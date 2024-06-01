@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     mijugador = new jugador(scene);
     QString rutaMalo1 = ":/imagenes/aviondeguerra.png";
     QPixmap malo1(rutaMalo1);
-    soldadoPos = QPointF(355,150);
+    soldadoPos = QPointF(360,140);
     soldado = new enemigos(scene, malo1, 0.12, soldadoPos);
 
     //scene->addItem(mijugador);
