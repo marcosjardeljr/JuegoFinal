@@ -6,7 +6,7 @@
 #include <QKeyEvent>
 #include <QDateTime>
 #include "jugador.h"
-
+#include "enemigos.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -24,6 +24,11 @@ MainWindow::MainWindow(QWidget *parent)
     timer->start(100);
     connect(timer, &QTimer::timeout, this, &MainWindow::moverJugador);
     mijugador = new jugador(scene);
+    QString rutaMalo1 = ":/imagenes/aviondeguerra.png";
+    QPixmap malo1(rutaMalo1);
+    soldadoPos = QPointF(355,150);
+    soldado = new enemigos(scene, malo1, 0.12, soldadoPos);
+
     //scene->addItem(mijugador);
     //mijugador->setPos(100, 100);
     //Fila superior
