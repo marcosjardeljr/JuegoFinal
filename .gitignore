@@ -34,7 +34,7 @@ Thumbs.db
 *.rc
 /.qmake.cache
 /.qmake.stash
-/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug
+/.build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug
 
 # qtcreator generated files
 *.pro.user*
