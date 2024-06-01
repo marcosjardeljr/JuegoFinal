@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->scale(1.2, 1.2);
     timer = new QTimer(this);
     timer->start(100);
+    connect(timer, &QTimer::timeout, this, &MainWindow::moverJugador);
     mijugador = new jugador(scene);
     //scene->addItem(mijugador);
     //mijugador->setPos(100, 100);
@@ -75,5 +76,25 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *evento){
+
+        if(evento->key() == Qt::Key_S){
+            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y()+10);
+        }
+        else if(evento->key() == Qt::Key_D){
+            mijugador->setPos(mijugador->pos().x()+10, mijugador->pos().y());
+        }
+        else if(evento->key() == Qt::Key_W){
+            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y()-10);
+        }
+        else if(evento->key() == Qt::Key_A){
+            mijugador->setPos(mijugador->pos().x()-10, mijugador->pos().y());
+        }
+}
+
+void MainWindow::moverJugador(){
+
 }
 
