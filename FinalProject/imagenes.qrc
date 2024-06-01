@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>imagenes/cientifico2.jpg</file>
-        <file>imagenes/cientificos.gif</file>
         <file>imagenes/enemigo1.png</file>
         <file>imagenes/fondo1.jpg</file>
         <file>imagenes/granada.png</file>
@@ -11,13 +9,17 @@
         <file>imagenes/soldado.png</file>
         <file>imagenes/fondovisual.png</file>
         <file>imagenes/fondo_circuito.jpg</file>
-        <file>imagenes/cientifico.jpg</file>
         <file>imagenes/man.jpg</file>
         <file>imagenes/manes.png</file>
-        <file>imagenes/cientifico recortado.jpg</file>
-        <file>imagenes/Imagen1.jpg</file>
-        <file>imagenes/image001.png</file>
         <file>imagenes/aviondeguerra.png</file>
         <file>imagenes/puas.png</file>
+        <file>imagenes/image001.png</file>
+        <file>imagenes/soldadorecortado.png</file>
+        <file>imagenes/bit0.png</file>
+        <file>imagenes/bit1.png</file>
+        <file>imagenes/trampa.png</file>
+        <file>imagenes/trampalado.png</file>
+        <file>imagenes/grenade.png</file>
+        <file>imagenes/canon.png</file>
     </qresource>
 </RCC>
