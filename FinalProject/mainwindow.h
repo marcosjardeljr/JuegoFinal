@@ -35,6 +35,7 @@ private:
     QTimer *timer;
     jugador *mijugador;
     QVector<pared*> muros;  // Vector de punteros a pared
+    bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
 
 };
 

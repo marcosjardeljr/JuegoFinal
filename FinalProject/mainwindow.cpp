@@ -80,21 +80,53 @@ MainWindow::~MainWindow()
 
 void MainWindow::keyPressEvent(QKeyEvent *evento){
 
-        if(evento->key() == Qt::Key_S){
-            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y()+10);
+    if(evento->key() == Qt::Key_S) {
+        mijugador->setPos(mijugador->pos().x(), mijugador->pos().y() + 10);
+
+        // Colision
+        if(EvaluarColision(mijugador)){
+            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y() - 20);
         }
-        else if(evento->key() == Qt::Key_D){
-            mijugador->setPos(mijugador->pos().x()+10, mijugador->pos().y());
+    }
+    else if(evento->key() == Qt::Key_W) {
+        mijugador->setPos(mijugador->pos().x(), mijugador->pos().y() - 10);
+
+        // Colision
+        if(EvaluarColision(mijugador)){
+            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y() + 20);
         }
-        else if(evento->key() == Qt::Key_W){
-            mijugador->setPos(mijugador->pos().x(), mijugador->pos().y()-10);
+    }
+    else if(evento->key() == Qt::Key_D) {
+        mijugador->setPos(mijugador->pos().x() + 10, mijugador->pos().y());
+
+        // Colision
+        if(EvaluarColision(mijugador)){
+            mijugador->setPos(mijugador->pos().x() - 20, mijugador->pos().y());
         }
-        else if(evento->key() == Qt::Key_A){
-            mijugador->setPos(mijugador->pos().x()-10, mijugador->pos().y());
+    }
+    else if(evento->key() == Qt::Key_A) {
+        mijugador->setPos(mijugador->pos().x() - 10, mijugador->pos().y());
+
+        // Colision
+        if(EvaluarColision(mijugador)){
+            mijugador->setPos(mijugador->pos().x() + 20, mijugador->pos().y());
         }
+    }
 }
+
 
 void MainWindow::moverJugador(){
 
+}
+
+bool MainWindow::EvaluarColision(QGraphicsItem *item)
+{
+    QVector<pared*>::Iterator it;
+    for(it=muros.begin();it!=muros.end();it++){
+        if((*it)->collidesWithItem(item)){
+            return true;
+        }
+    }
+    return false;
 }
 
