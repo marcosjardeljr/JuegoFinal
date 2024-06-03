@@ -416,11 +416,30 @@ void MainWindow::cambiarNivel() {
         muros.push_back(new pared(15, 80, 428, 135)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 80, 480, 60)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 80, 540, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 480, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 520, 270)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 100, 540, 420)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 230, 600, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 656, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 700, 60)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 230, 730, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 670, 430)); scene2->addItem(muros.back());
+
+
 
         //muros horizontales
         muros.push_back(new pared(100, 15, 340, 200)); scene2->addItem(muros.back()); //ancho, alto, posx , pos y
         muros.push_back(new pared(100, 15, 380, 270)); scene2->addItem(muros.back());
         muros.push_back(new pared(80, 15, 480, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(120, 15, 380, 420)); scene2->addItem(muros.back());
+        muros.push_back(new pared(130, 15, 430, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(130, 15, 540, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(160, 15, 520, 270)); scene2->addItem(muros.back());
+        muros.push_back(new pared(80, 15, 660, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(80, 15, 660, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(80, 15, 600, 420)); scene2->addItem(muros.back());
+        muros.push_back(new pared(60, 5, 730, 300)); scene2->addItem(muros.back());
+
 
 }
 
