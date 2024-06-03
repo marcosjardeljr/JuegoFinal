@@ -7,6 +7,10 @@
 #include <QDateTime>
 #include "jugador.h"
 #include "enemigos.h"
+#include "movimientos.h"
+#include <QMessageBox>
+
+bool level = false;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -22,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->scale(1.2, 1.2);
     timer = new QTimer(this);
     timer->start(100);
-    connect(timer, &QTimer::timeout, this, &MainWindow::moverJugador);
+    connect(timer, &QTimer::timeout, this, &MainWindow::movEnemigos);
     mijugador = new jugador(scene);
 
 
@@ -38,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QString rutaMalo3 = ":/imagenes/bit0.png";
     QPixmap malo3(rutaMalo3);
-    bitPos = QPointF(200,250);
+    bitPos = QPointF(250,250);
     bit = new enemigos(scene, malo3, 0.04, bitPos);
 
     QString rutaMalo4 = ":/imagenes/bit1.png";
@@ -116,11 +120,6 @@ MainWindow::MainWindow(QWidget *parent)
     trampaPos = QPointF(500,430);
     trampa = new enemigos(scene, malo18, 0.06, trampaPos);
 
-
-
-
-    //scene->addItem(mijugador);
-    //mijugador->setPos(100, 100);
     //Fila superior
     for(int i=40;i<1070;i+=37){
         muros.push_back(new pared(50,30,i,37));
@@ -152,21 +151,22 @@ MainWindow::MainWindow(QWidget *parent)
 
     muros.push_back(new pared(100, 20, 70, 200)); scene->addItem(muros.back()); //ancho, alto, posx , pos y
     muros.push_back(new pared(100, 20, 840, 350)); scene->addItem(muros.back());
-
     muros.push_back(new pared(100, 20, 70, 350)); scene->addItem(muros.back());
     muros.push_back(new pared(90, 20, 320, 350)); scene->addItem(muros.back());
-
     muros.push_back(new pared(90, 20, 450, 350)); scene->addItem(muros.back());
-
     muros.push_back(new pared(20, 100, 700, 200)); scene->addItem(muros.back());
-    muros.push_back(new pared(105, 20, 840, 200)); scene->addItem(muros.back()); //parte superior del cañon fila superior
-
+    muros.push_back(new pared(105, 20, 840, 200)); scene->addItem(muros.back());
     muros.push_back(new pared(20, 200, 520, 350)); scene->addItem(muros.back());
-
     muros.push_back(new pared(20, 170, 520, 100)); scene->addItem(muros.back());
+    muros.push_back(new pared(100, 20, 650, 350)); scene->addItem(muros.back());
 
-    muros.push_back(new pared(100, 20, 650, 350)); scene->addItem(muros.back()); //base del cañon
+    //tunel 1:
+    tunel1 = new escape(250, 100, 50, 50);
+    scene->addItem(tunel1);
+    tunel1->setVisible(false);
+    tunel1->setPos(900, 82);
 }
+
 
 MainWindow::~MainWindow()
 {
@@ -210,9 +210,57 @@ void MainWindow::keyPressEvent(QKeyEvent *evento){
 }
 
 
-void MainWindow::moverJugador(){
 
+void MainWindow::movEnemigos()
+{
+    if (level == false)
+    {
+    movimientos::movimientoCircular(bit, scene, angle, bitPos);
+    if (mijugador->collidesWithItem(bit)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+    // Evaluamos colision con el túnel
+
+    if (tunel1 != nullptr) {
+        // Verifica si el jugador está en la posición para mostrar el túnel
+        bool mostrarTunel = (mijugador->pos().x() >= 880 && mijugador->pos().x() <= 930 &&
+                             mijugador->pos().y() >= 72 && mijugador->pos().y() <= 92);
+
+        // Muestra u oculta el túnel según la posición del jugador
+        tunel1->setVisible(mostrarTunel);
+
+        if (mostrarTunel && mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1)) {
+            // Cambiamos de nivel
+            level = true;
+           // timer->stop();
+            cambiarNivel();
+            return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
+        }
+        // Si el túnel está visible, verifica la colisión
+       /*if (mostrarTunel && mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1)) {
+            // Cambiamos de nivel
+            level = true;
+           // timer->stop();
+            //cambiarNivel();
+            return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
+        }
+    }
+    }
+    if (level == true){
+        movimientos::movimientoCircular(bit, scene, angle, bitPos);
+        if (mijugador->collidesWithItem(bit)){
+             QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+             timer->stop();
+             exit(0);
+        }*/
 }
+    }
+}
+
+
 
 bool MainWindow::EvaluarColision(QGraphicsItem *item)
 {
@@ -223,5 +271,112 @@ bool MainWindow::EvaluarColision(QGraphicsItem *item)
         }
     }
     return false;
+}
+
+void MainWindow::cambiarNivel() {
+
+        // Eliminar el jugador y limpiar la escena actual
+        scene->removeItem(mijugador);
+        delete mijugador;
+        mijugador = nullptr;
+
+        // Limpiar y eliminar los muros
+        qDeleteAll(muros);
+        muros.clear();
+
+    //remueve muros
+        //Columna izquierda
+        for(int i=-111; i<650; i+=32){
+            muros.push_back(new pared(25,40,40,i));
+            scene->removeItem(muros.back());
+            muros.pop_back();
+        }
+
+        //Columna derecha
+        for(int i =30; i<1000; i+=32){
+            muros.push_back(new pared(100,50,955,i));
+            scene->removeItem(muros.back());
+            muros.pop_back();
+        }
+
+        //fila superior abajo
+        for(int i =300; i<700; i+=37){
+            muros.push_back(new pared(70,20,i,80));
+            scene->removeItem(muros.back());
+            muros.pop_back();
+        }
+
+        //fila inferior
+        for(int i=50; i<1000; i+=45){
+            muros.push_back(new pared(70,20,i,505));
+            scene->removeItem(muros.back());
+            muros.pop_back();
+        }
+
+        //fila inferior
+        for(int i=50; i<1000; i+=45){
+            muros.push_back(new pared(70,20,i,505));
+            scene->removeItem(muros.back());
+            muros.pop_back();
+        }
+        muros.push_back(new pared(100, 20, 70, 200)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(100, 20, 840, 350)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(100, 20, 70, 350)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(90, 20, 320, 350)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(90, 20, 450, 350)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(20, 100, 700, 200)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(105, 20, 840, 200)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(20, 200, 520, 350)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(20, 170, 520, 100)); scene->addItem(muros.back()); muros.pop_back();
+        muros.push_back(new pared(100, 20, 650, 350)); scene->addItem(muros.back()); muros.pop_back();
+
+
+    //liberamos enemigos
+        for (enemigos *enemigo : listaEnemigos) {
+            scene->removeItem(enemigo);
+            delete enemigo;
+            enemigo = nullptr;
+        }
+
+        //liberamos trampas
+        scene->removeItem(trampa);
+        delete trampa;
+        trampa = nullptr;
+
+        //Liberamos tunel
+        scene->removeItem(tunel1);
+        delete tunel1;
+        tunel1= nullptr;
+
+
+        // Elimina todos los elementos de la escena actual
+        scene->clear();
+
+        // Elimina la escena anterior
+        delete scene;
+
+        // Crea una nueva escena y configúrala con el fondo y elementos del nuevo nivel
+        ui->setupUi(this);
+        scene2 = new QGraphicsScene;
+        ui->graphicsView->setScene(scene2);
+        QImage nuevoFondo(":/imagenes/fondovisual.png");
+        QBrush nuevaBrochaF(nuevoFondo);
+        scene2->setSceneRect(420, 205, 180, 160);
+        ui->graphicsView->scale(1.2, 1.2);
+        ui->graphicsView->scale(0.75, 0.75);
+        timer = new QTimer(this);
+
+        // Reiniciar el temporizador para el nuevo nivel
+        timer->start(100);
+
+        //jugador
+        mijugador = new jugador(scene2);
+        scene2->addItem(mijugador);
+
+        // Restablece la posición del jugador en el nuevo nivel
+        mijugador->setPos(100, 100);
+
+
+        qDebug() << "Se cambia de nivel efectivamente";
 }
 
