@@ -359,11 +359,11 @@ void MainWindow::cambiarNivel() {
         ui->setupUi(this);
         scene2 = new QGraphicsScene;
         ui->graphicsView->setScene(scene2);
-        QImage nuevoFondo(":/imagenes/fondovisual.png");
-        QBrush nuevaBrochaF(nuevoFondo);
+        QImage nuevoFondo(":/imagenes/fondo_circuito.jpg");
+        QBrush newBrochaf(nuevoFondo);
+        ui->graphicsView->setBackgroundBrush(newBrochaf);
         scene2->setSceneRect(420, 205, 180, 160);
         ui->graphicsView->scale(1.2, 1.2);
-        ui->graphicsView->scale(0.75, 0.75);
         timer = new QTimer(this);
 
         // Reiniciar el temporizador para el nuevo nivel
@@ -375,8 +375,52 @@ void MainWindow::cambiarNivel() {
 
         // Restablece la posición del jugador en el nuevo nivel
         mijugador->setPos(100, 100);
-
-
         qDebug() << "Se cambia de nivel efectivamente";
+
+
+        //Fila superior
+        for(int i=40;i<1070;i+=37){
+            muros.push_back(new pared(50,30,i,37));
+            scene2->addItem(muros.back());
+        }
+        //Columna izquierda
+        for(int i=-111; i<650; i+=32){
+            muros.push_back(new pared(25,40,40,i));
+            scene2->addItem(muros.back());
+        }
+
+        //Columna derecha
+        for(int i =30; i<1000; i+=32){
+            muros.push_back(new pared(100,50,955,i));
+            scene2->addItem(muros.back());
+        }
+
+        //fila inferior
+        for(int i=50; i<1000; i+=45){
+            muros.push_back(new pared(70,20,i,505));
+            scene2->addItem(muros.back());
+        }
+
+        //ancho, alto, posx , pos y
+        //muros verticales
+        muros.push_back(new pared(15, 100, 280, 60)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 300, 280, 230)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 100, 780, 420)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 300, 780, 60)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 280, 330, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 40, 330, 480)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 60, 380, 390)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 60, 380, 270)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 470, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 380, 60)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 428, 135)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 480, 60)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 540, 130)); scene2->addItem(muros.back());
+
+        //muros horizontales
+        muros.push_back(new pared(100, 15, 340, 200)); scene2->addItem(muros.back()); //ancho, alto, posx , pos y
+        muros.push_back(new pared(100, 15, 380, 270)); scene2->addItem(muros.back());
+        muros.push_back(new pared(80, 15, 480, 200)); scene2->addItem(muros.back());
+
 }
 
