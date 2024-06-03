@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     enemigos.cpp \
+    escape.cpp \
     jugador.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     enemigos.h \
+    escape.h \
     jugador.h \
     mainwindow.h \
     movimientos.h \

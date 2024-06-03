@@ -5,6 +5,7 @@
 #include "pared.h"
 #include "jugador.h"
 #include "enemigos.h"
+#include "escape.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -23,8 +24,8 @@ public:
 
 private slots:
     void keyPressEvent(QKeyEvent *evento);
-    void moverJugador();
-
+    void movEnemigos();
+    void cambiarNivel();
 
 signals:
 
@@ -33,13 +34,16 @@ private:
 
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
+    QGraphicsScene *scene2;
     QTimer *timer;
     jugador *mijugador;
     QVector<pared*> muros;  // Vector de punteros a pared
+    escape *tunel1;
+    //Enemigos
     QList<enemigos *> listaEnemigos;
+
     enemigos *soldado;
     QPointF soldadoPos;
-
     enemigos *avion;
     QPointF avionPos;
     enemigos *bit;
@@ -52,6 +56,10 @@ private:
     QPointF granadaPos;
     enemigos *canon;
     QPointF canonPos;
+
+
+    //Movimientos
+    qreal angle;   // Para el movimiento circular
 
     bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
 
