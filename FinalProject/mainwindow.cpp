@@ -444,6 +444,19 @@ void MainWindow::cambiarNivel() {
         muros.push_back(new pared(80, 15, 600, 420)); scene2->addItem(muros.back());
         muros.push_back(new pared(60, 5, 730, 300)); scene2->addItem(muros.back());
 
+        QString rutaPildora = ":/imagenes/pildora.png";
+        QPixmap maloP(rutaPildora);
+        pildoraPos = QPointF(100,150);
+        pildora = new enemigos(scene2, maloP, 0.03, pildoraPos);
 
+        QString rutaPerseguidor = ":/imagenes/manada.png";
+        QPixmap maloH(rutaPerseguidor);
+        perseguidorPos = QPointF(100,300);
+        perseguidor = new enemigos(scene2, maloH, 0.11, perseguidorPos);
+
+        QString rutaPsoga = ":/imagenes/soga.png";
+        QPixmap maloS(rutaPsoga);
+        sogaPos = QPointF(800,200);
+        soga = new enemigos(scene2, maloS, 0.11, sogaPos);
 }
 
