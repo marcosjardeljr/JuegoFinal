@@ -77,7 +77,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QString rutaMalo10= ":/imagenes/grenade.png";
     QPixmap malo10(rutaMalo10);
-    granadaPos = QPointF(690,100);
+    granadaPos = QPointF(750,100);
     granada = new enemigos(scene, malo10, 0.02, granadaPos);
 
     QString rutaMalo11= ":/imagenes/canon.png";
@@ -165,6 +165,8 @@ MainWindow::MainWindow(QWidget *parent)
     scene->addItem(tunel1);
     tunel1->setVisible(false);
     tunel1->setPos(900, 82);
+
+    listaEnemigos = {avion, soldado};
 }
 
 
@@ -215,11 +217,33 @@ void MainWindow::movEnemigos()
 {
     if (level == false)
     {
-    movimientos::movimientoCircular(bit, scene, angle, bitPos);
+    movimientos::movimientoCircular(bit, angle, bitPos);
     if (mijugador->collidesWithItem(bit)){
          QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
          timer->stop();
          exit(0);
+    }
+    movimientos::movimientoEliptico(bitone, angle2, bitonePos);
+    if (mijugador->collidesWithItem(bitone)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+    movimientos::caidaLibre(granada, granadaPos);
+    if (mijugador->collidesWithItem(granada)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+
+    }
+
+    movimientos::movimientoParabolico(canon, angle3);
+    if (mijugador->collidesWithItem(canon)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+
     }
 
     // Evaluamos colision con el túnel
@@ -232,6 +256,7 @@ void MainWindow::movEnemigos()
         // Muestra u oculta el túnel según la posición del jugador
         tunel1->setVisible(mostrarTunel);
 
+        // Si el túnel está visible, verifica la colisión
         if (mostrarTunel && mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1)) {
             // Cambiamos de nivel
             level = true;
@@ -239,28 +264,9 @@ void MainWindow::movEnemigos()
             cambiarNivel();
             return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
         }
-        // Si el túnel está visible, verifica la colisión
-       /*if (mostrarTunel && mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1)) {
-            // Cambiamos de nivel
-            level = true;
-           // timer->stop();
-            //cambiarNivel();
-            return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
-        }
-    }
-    }
-    if (level == true){
-        movimientos::movimientoCircular(bit, scene, angle, bitPos);
-        if (mijugador->collidesWithItem(bit)){
-             QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
-             timer->stop();
-             exit(0);
-        }*/
 }
-    }
 }
-
-
+}
 
 bool MainWindow::EvaluarColision(QGraphicsItem *item)
 {
@@ -424,8 +430,6 @@ void MainWindow::cambiarNivel() {
         muros.push_back(new pared(15, 80, 700, 60)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 230, 730, 200)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 80, 670, 430)); scene2->addItem(muros.back());
-
-
 
         //muros horizontales
         muros.push_back(new pared(100, 15, 340, 200)); scene2->addItem(muros.back()); //ancho, alto, posx , pos y
