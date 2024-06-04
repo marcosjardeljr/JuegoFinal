@@ -361,11 +361,11 @@ void MainWindow::cambiarNivel() {
         // Elimina la escena anterior
         delete scene;
 
-        // Crea una nueva escena y configúrala con el fondo y elementos del nuevo nivel
+        // Crea una nueva escena
         ui->setupUi(this);
         scene2 = new QGraphicsScene;
         ui->graphicsView->setScene(scene2);
-        QImage nuevoFondo(":/imagenes/fondo_circuito.jpg");
+        QImage nuevoFondo(":/imagenes/newCircuito.png");
         QBrush newBrochaf(nuevoFondo);
         ui->graphicsView->setBackgroundBrush(newBrochaf);
         scene2->setSceneRect(420, 205, 180, 160);

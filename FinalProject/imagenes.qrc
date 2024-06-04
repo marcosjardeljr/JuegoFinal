@@ -22,5 +22,7 @@
         <file>imagenes/grenade.png</file>
         <file>imagenes/canon.png</file>
         <file>imagenes/alan turing (1).png</file>
+        <file>imagenes/circuito2.png</file>
+        <file>imagenes/newCircuito.png</file>
     </qresource>
 </RCC>
