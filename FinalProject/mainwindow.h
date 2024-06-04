@@ -40,7 +40,7 @@ private:
     QVector<pared*> muros;  // Vector de punteros a pared
     QVector<pared*> muros2;
     escape *tunel1;
-    //Enemigos
+    //Enemigos nivel 1
     QList<enemigos *> listaEnemigos;
 
     enemigos *soldado;
@@ -65,6 +65,14 @@ private:
     qreal angle3;   // Para el movimiento parabolico
 
     bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
+
+    //enemigos segundo nivel
+    enemigos *perseguidor;
+    QPointF perseguidorPos;
+    enemigos *pildora;
+    QPointF pildoraPos;
+    enemigos *soga;
+    QPointF sogaPos;
 
 };
 

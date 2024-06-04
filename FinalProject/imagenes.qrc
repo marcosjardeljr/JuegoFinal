@@ -24,5 +24,8 @@
         <file>imagenes/alan turing (1).png</file>
         <file>imagenes/circuito2.png</file>
         <file>imagenes/newCircuito.png</file>
+        <file>imagenes/manada.png</file>
+        <file>imagenes/pildora.png</file>
+        <file>imagenes/soga.png</file>
     </qresource>
 </RCC>
