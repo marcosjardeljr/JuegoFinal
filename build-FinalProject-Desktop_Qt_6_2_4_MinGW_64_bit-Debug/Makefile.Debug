@@ -153,6 +153,7 @@ debug/qrc_imagenes.cpp: ../FinalProject/imagenes.qrc \
 		../FinalProject/imagenes/soldado.png \
 		../FinalProject/imagenes/bit0.png \
 		../FinalProject/imagenes/man.jpg \
+		../FinalProject/imagenes/alan\ turing\ (1).png \
 		../FinalProject/imagenes/grenade.png \
 		../FinalProject/imagenes/bit1.png \
 		../FinalProject/imagenes/canon.png \

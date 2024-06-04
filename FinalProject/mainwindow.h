@@ -60,6 +60,8 @@ private:
 
     //Movimientos
     qreal angle;   // Para el movimiento circular
+    qreal angle2;   // Para el movimiento eliptico
+    qreal angle3;   // Para el movimiento parabolico
 
     bool EvaluarColision(QGraphicsItem *item); // Evaluamos las colisiones con los enemigos
 
