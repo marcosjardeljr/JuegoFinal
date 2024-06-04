@@ -290,7 +290,7 @@ void MainWindow::cambiarNivel() {
         qDeleteAll(muros);
         muros.clear();
 
-    //remueve muros
+        //remueve muros
         //Columna izquierda
         for(int i=-111; i<650; i+=32){
             muros.push_back(new pared(25,40,40,i));
@@ -386,8 +386,8 @@ void MainWindow::cambiarNivel() {
 
         //Fila superior
         for(int i=40;i<1070;i+=37){
-            muros.push_back(new pared(50,30,i,37));
-            scene2->addItem(muros.back());
+            muros2.push_back(new pared(50,30,i,37));
+            scene2->addItem(muros2.back());
         }
         //Columna izquierda
         for(int i=-111; i<650; i+=32){
