@@ -32,14 +32,14 @@ void movimientos::caidaLibre(QGraphicsPixmapItem *granada, QPointF initialPos)
 void movimientos::movimientoParabolico(QGraphicsPixmapItem *canon, qreal &tiempo)
 {
     qreal velocidadInicialX = 1;
-    qreal velocidadInicialY = -1;
+    qreal velocidadInicialY = -2;
     qreal gravedad = 4.4;
 
     qreal xp = velocidadInicialX * tiempo;
     qreal yp = velocidadInicialY * tiempo + (0.5 * gravedad * tiempo * tiempo);
 
-    canon->setPos(canon->pos().x() - xp, canon->pos().y() -xp );
-    tiempo += 0.2;
+    canon->setPos(canon->pos().x() - xp, canon->pos().y() -xp  );
+    tiempo += 0.01;
 }
 
 bool movimientos::EvaluarColisionMalos(QGraphicsItem *item, const  QList<QGraphicsItem *> &items)
