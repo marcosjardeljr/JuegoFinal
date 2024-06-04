@@ -38,6 +38,7 @@ private:
     QTimer *timer;
     jugador *mijugador;
     QVector<pared*> muros;  // Vector de punteros a pared
+    QVector<pared*> muros2;
     escape *tunel1;
     //Enemigos
     QList<enemigos *> listaEnemigos;
