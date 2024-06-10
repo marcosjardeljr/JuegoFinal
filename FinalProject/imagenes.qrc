@@ -27,5 +27,7 @@
         <file>imagenes/manada.png</file>
         <file>imagenes/pildora.png</file>
         <file>imagenes/soga.png</file>
+        <file>imagenes/person.png</file>
+        <file>imagenes/manzana.png</file>
     </qresource>
 </RCC>

@@ -73,6 +73,8 @@ private:
     QPointF pildoraPos;
     enemigos *soga;
     QPointF sogaPos;
+    enemigos *apple;
+    QPointF applePos;
 
 };
 
