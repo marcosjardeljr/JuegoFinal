@@ -3,6 +3,7 @@
 #include <QSplashScreen>
 #include <QIcon>
 #include <QTimer>
+#include <QCoreApplication>
 
 int main(int argc, char *argv[])
 {
