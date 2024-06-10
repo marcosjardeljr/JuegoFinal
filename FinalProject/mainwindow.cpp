@@ -380,14 +380,13 @@ void MainWindow::cambiarNivel() {
         scene2->addItem(mijugador);
 
         // Restablece la posición del jugador en el nuevo nivel
-        mijugador->setPos(100, 100);
+        mijugador->setPos(100, 150);
         qDebug() << "Se cambia de nivel efectivamente";
 
-
-        //Fila superior
+        //fila superior
         for(int i=40;i<1070;i+=37){
-            muros2.push_back(new pared(50,30,i,37));
-            scene2->addItem(muros2.back());
+            muros.push_back(new pared(50,30,i,37));
+            scene2->addItem(muros.back());
         }
         //Columna izquierda
         for(int i=-111; i<650; i+=32){
@@ -430,6 +429,13 @@ void MainWindow::cambiarNivel() {
         muros.push_back(new pared(15, 80, 700, 60)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 230, 730, 200)); scene2->addItem(muros.back());
         muros.push_back(new pared(15, 80, 670, 430)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 100, 230, 410)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 300, 230, 50)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 840, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 840, 200)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 80, 890, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 100, 150, 334)); scene2->addItem(muros.back());
+        muros.push_back(new pared(15, 100, 112, 334)); scene2->addItem(muros.back());
 
         //muros horizontales
         muros.push_back(new pared(100, 15, 340, 200)); scene2->addItem(muros.back()); //ancho, alto, posx , pos y
@@ -443,20 +449,34 @@ void MainWindow::cambiarNivel() {
         muros.push_back(new pared(80, 15, 660, 350)); scene2->addItem(muros.back());
         muros.push_back(new pared(80, 15, 600, 420)); scene2->addItem(muros.back());
         muros.push_back(new pared(60, 5, 730, 300)); scene2->addItem(muros.back());
+        muros.push_back(new pared(60, 15, 785, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(50, 15, 840, 420)); scene2->addItem(muros.back());
+        muros.push_back(new pared(60, 15, 900, 350)); scene2->addItem(muros.back());
+        muros.push_back(new pared(120, 15, 850, 280)); scene2->addItem(muros.back());
+        muros.push_back(new pared(110, 15, 780, 130)); scene2->addItem(muros.back());
+        muros.push_back(new pared(80, 15, 150, 334)); scene2->addItem(muros.back());
+        muros.push_back(new pared(50, 15, 112, 430)); scene2->addItem(muros.back());
+        muros.push_back(new pared(100, 15, 60, 250)); scene2->addItem(muros.back());
+        muros.push_back(new pared(100, 15, 130, 170)); scene2->addItem(muros.back());
 
         QString rutaPildora = ":/imagenes/pildora.png";
         QPixmap maloP(rutaPildora);
-        pildoraPos = QPointF(100,150);
+        pildoraPos = QPointF(380,150);
         pildora = new enemigos(scene2, maloP, 0.03, pildoraPos);
 
-        QString rutaPerseguidor = ":/imagenes/manada.png";
+        QString rutaPerseguidor = ":/imagenes/person.png";
         QPixmap maloH(rutaPerseguidor);
-        perseguidorPos = QPointF(100,300);
-        perseguidor = new enemigos(scene2, maloH, 0.11, perseguidorPos);
+        perseguidorPos = QPointF(100,100);
+        perseguidor = new enemigos(scene2, maloH, 0.04, perseguidorPos);
 
         QString rutaPsoga = ":/imagenes/soga.png";
         QPixmap maloS(rutaPsoga);
-        sogaPos = QPointF(800,200);
+        sogaPos = QPointF(800,70);
         soga = new enemigos(scene2, maloS, 0.11, sogaPos);
+
+        QString rutaApple = ":/imagenes/manzana.png";
+        QPixmap maloA(rutaApple);
+        applePos = QPointF(400,220);
+        apple = new enemigos(scene2, maloA, 0.06, applePos);
 }
 
