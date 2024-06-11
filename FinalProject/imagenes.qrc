@@ -29,5 +29,9 @@
         <file>imagenes/soga.png</file>
         <file>imagenes/person.png</file>
         <file>imagenes/manzana.png</file>
+        <file>imagenes/elemento1maquina.png</file>
+        <file>imagenes/elemento2maquina.png</file>
+        <file>imagenes/elemento3maquina.png</file>
+        <file>imagenes/balaSoldado.png</file>
     </qresource>
 </RCC>
