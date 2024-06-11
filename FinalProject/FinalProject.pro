@@ -39,11 +39,4 @@ RESOURCES += \
 DISTFILES += \
     imagenes/cientifico2.jpg \
     imagenes/cientificos.gif \
-    imagenes/enemigo1.png \
-    imagenes/fondo1.jpg \
-    imagenes/fondo_inicio.png \
-    imagenes/granada.png \
-    imagenes/obstaculo1.jpg \
-    imagenes/obstaculo2.jpg \
-    imagenes/proyectil.png \
-    imagenes/soldado.png
+    imagenes/fondo_inicio.png

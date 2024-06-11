@@ -50,31 +50,6 @@ MainWindow::MainWindow(QWidget *parent)
     bitonePos = QPointF(600,250);
     bitone = new enemigos(scene, malo4, 0.05, bitonePos);
 
-    QString rutaMalo5 = ":/imagenes/trampa.png";
-    QPixmap malo5(rutaMalo5);
-    trampaPos = QPointF(600,455);
-    trampa = new enemigos(scene, malo5, 0.06, trampaPos);
-
-    QString rutaMalo6 = ":/imagenes/trampa.png";
-    QPixmap malo6(rutaMalo6);
-    trampaPos = QPointF(630,455);
-    trampa = new enemigos(scene, malo6, 0.06, trampaPos);
-
-    QString rutaMalo7 = ":/imagenes/trampa.png";
-    QPixmap malo7(rutaMalo7);
-    trampaPos = QPointF(660,455);
-    trampa = new enemigos(scene, malo7, 0.06, trampaPos);
-
-    QString rutaMalo8 = ":/imagenes/trampa.png";
-    QPixmap malo8(rutaMalo8);
-    trampaPos = QPointF(690,455);
-    trampa = new enemigos(scene, malo8, 0.06, trampaPos);
-
-    QString rutaMalo9= ":/imagenes/trampalado.png";
-    QPixmap malo9(rutaMalo9);
-    trampaPos = QPointF(690,370);
-    trampa = new enemigos(scene, malo9, 0.06, trampaPos);
-
     QString rutaMalo10= ":/imagenes/grenade.png";
     QPixmap malo10(rutaMalo10);
     granadaPos = QPointF(750,100);
@@ -85,40 +60,39 @@ MainWindow::MainWindow(QWidget *parent)
     canonPos = QPointF(850,300);
     canon = new enemigos(scene, malo11, 0.2, canonPos);
 
-    QString rutaMalo12 = ":/imagenes/trampa.png";
-    QPixmap malo12(rutaMalo12);
+    QString rutaTrampa = ":/imagenes/trampa.png";
+    QPixmap malo12(rutaTrampa);
     trampaPos = QPointF(400,455);
     trampa = new enemigos(scene, malo12, 0.06, trampaPos);
 
-    QString rutaMalo13 = ":/imagenes/trampa.png";
-    QPixmap malo13(rutaMalo13);
     trampaPos = QPointF(430,455);
-    trampa = new enemigos(scene, malo13, 0.06, trampaPos);
+    trampa1 = new enemigos(scene, malo12, 0.06, trampaPos);
 
-    QString rutaMalo14 = ":/imagenes/trampa.png";
-    QPixmap malo14(rutaMalo14);
     trampaPos = QPointF(370,455);
-    trampa = new enemigos(scene, malo14, 0.06, trampaPos);
+    trampa2 = new enemigos(scene, malo12, 0.06, trampaPos);
 
-    QString rutaMalo15 = ":/imagenes/trampa.png";
-    QPixmap malo15(rutaMalo15);
     trampaPos = QPointF(340,455);
-    trampa = new enemigos(scene, malo15, 0.06, trampaPos);
+    trampa3 = new enemigos(scene, malo12, 0.06, trampaPos);
 
-    QString rutaMalo16= ":/imagenes/trampalado.png";
-    QPixmap malo16(rutaMalo16);
-    trampaPos = QPointF(500,370);
-    trampa = new enemigos(scene, malo16, 0.06, trampaPos);
+    trampaPos = QPointF(600,455);
+    trampa4 = new enemigos(scene, malo12, 0.06, trampaPos);
 
-    QString rutaMalo17= ":/imagenes/trampalado.png";
-    QPixmap malo17(rutaMalo17);
-    trampaPos = QPointF(500,400);
-    trampa = new enemigos(scene, malo17, 0.06, trampaPos);
+    /* Recreamos todos los elementos que debemos capturar para crear la maquina */
 
-    QString rutaMalo18= ":/imagenes/trampalado.png";
-    QPixmap malo18(rutaMalo18);
-    trampaPos = QPointF(500,430);
-    trampa = new enemigos(scene, malo18, 0.06, trampaPos);
+    QString rutaElemen1 = ":/imagenes/elemento1maquina.png";
+    QPixmap elemen1(rutaElemen1);
+    elementoPos = QPointF(400,420);
+    elemento = new enemigos(scene, elemen1, 0.03, elementoPos);
+
+    QString rutaElemen2 = ":/imagenes/elemento2maquina.png";
+    QPixmap elemen2(rutaElemen2);
+    elementoPos2 = QPointF(880,420);
+    elemento2 = new enemigos(scene, elemen2, 0.03, elementoPos2);
+
+    QString rutaElemen3 = ":/imagenes/elemento3maquina.png";
+    QPixmap elemen3(rutaElemen3);
+    elementoPos3 = QPointF(580,120);
+    elemento3 = new enemigos(scene, elemen3, 0.03, elementoPos3);
 
     //Fila superior
     for(int i=40;i<1070;i+=37){
@@ -166,7 +140,6 @@ MainWindow::MainWindow(QWidget *parent)
     tunel1->setVisible(false);
     tunel1->setPos(900, 82);
 
-    listaEnemigos = {avion, soldado};
 }
 
 
@@ -246,26 +219,82 @@ void MainWindow::movEnemigos()
 
     }
 
+    if (mijugador->collidesWithItem(trampa)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+
+    if (mijugador->collidesWithItem(trampa1)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+
+    if (mijugador->collidesWithItem(trampa2)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+    if (mijugador->collidesWithItem(trampa3)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+    if (mijugador->collidesWithItem(trampa4)){
+         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+         timer->stop();
+         exit(0);
+    }
+
+
+    if (mijugador->collidesWithItem(elemento)){
+         elemento->setVisible(false);
+    }
+    if (mijugador->collidesWithItem(elemento2)){
+         elemento2->setVisible(false);
+    }
+    if (mijugador->collidesWithItem(elemento3)){
+         elemento3->setVisible(false);
+    }
+
     // Evaluamos colision con el túnel
+    if (tunel1 != nullptr && mijugador != nullptr) {
+        // Verifica colisiones
+        if (mijugador->collidesWithItem(elemento))
+        {
+            colisionConElemento1 = true;
+        }
 
-    if (tunel1 != nullptr) {
-        // Verifica si el jugador está en la posición para mostrar el túnel
-        bool mostrarTunel = (mijugador->pos().x() >= 880 && mijugador->pos().x() <= 930 &&
-                             mijugador->pos().y() >= 72 && mijugador->pos().y() <= 92);
-
-        // Muestra u oculta el túnel según la posición del jugador
-        tunel1->setVisible(mostrarTunel);
+        if (mijugador->collidesWithItem(elemento2))
+        {
+            colisionConElemento2 = true;
+        }
+        if (mijugador->collidesWithItem(elemento3))
+        {
+            colisionConElemento3 = true;
+        }
+        // Muestra el túnel solo si se han producido ambas colisiones
+        if ((colisionConElemento1 == colisionConElemento2) && (colisionConElemento1 == colisionConElemento3))
+        {
+            tunel1->setVisible(true);
+        }
 
         // Si el túnel está visible, verifica la colisión
-        if (mostrarTunel && mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1)) {
+        if (mijugador != nullptr && tunel1->isVisible() && mijugador->collidesWithItem(tunel1))
+        {
             // Cambiamos de nivel
             level = true;
-           // timer->stop();
+            // timer->stop();
             cambiarNivel();
             return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
         }
-}
-}
+    }
+    }
 }
 
 bool MainWindow::EvaluarColision(QGraphicsItem *item)

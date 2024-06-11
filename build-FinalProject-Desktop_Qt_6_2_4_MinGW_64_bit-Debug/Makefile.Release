@@ -74,14 +74,7 @@ OBJECTS       = release/enemigos.o \
 
 DIST          = imagenes/cientifico2.jpg \
 		imagenes/cientificos.gif \
-		imagenes/enemigo1.png \
-		imagenes/fondo1.jpg \
-		imagenes/fondo_inicio.png \
-		imagenes/granada.png \
-		imagenes/obstaculo1.jpg \
-		imagenes/obstaculo2.jpg \
-		imagenes/proyectil.png \
-		imagenes/soldado.png ..\FinalProject\enemigos.h \
+		imagenes/fondo_inicio.png ..\FinalProject\enemigos.h \
 		..\FinalProject\escape.h \
 		..\FinalProject\jugador.h \
 		..\FinalProject\mainwindow.h \
@@ -139,12 +132,13 @@ release/qrc_imagenes.cpp: ../FinalProject/imagenes.qrc \
 		C:/Qt/6.2.4/mingw_64/bin/rcc.exe \
 		../FinalProject/imagenes/obstaculo2.jpg \
 		../FinalProject/imagenes/manes.png \
-		../FinalProject/imagenes/trampa.png \
+		../FinalProject/imagenes/manada.png \
 		../FinalProject/imagenes/proyectil.png \
+		../FinalProject/imagenes/manzana.png \
 		../FinalProject/imagenes/aviondeguerra.png \
-		../FinalProject/imagenes/obstaculo1.jpg \
-		../FinalProject/imagenes/soldadorecortado.png \
-		../FinalProject/imagenes/trampalado.png \
+		../FinalProject/imagenes/balaSoldado.png \
+		../FinalProject/imagenes/circuito2.png \
+		../FinalProject/imagenes/pildora.png \
 		../FinalProject/imagenes/enemigo1.png \
 		../FinalProject/imagenes/fondovisual.png \
 		../FinalProject/imagenes/fondo_circuito.jpg \
@@ -152,13 +146,23 @@ release/qrc_imagenes.cpp: ../FinalProject/imagenes.qrc \
 		../FinalProject/imagenes/granada.png \
 		../FinalProject/imagenes/soldado.png \
 		../FinalProject/imagenes/bit0.png \
-		../FinalProject/imagenes/man.jpg \
+		../FinalProject/imagenes/elemento2maquina.png \
 		../FinalProject/imagenes/alan\ turing\ (1).png \
-		../FinalProject/imagenes/grenade.png \
+		../FinalProject/imagenes/elemento1maquina.png \
 		../FinalProject/imagenes/bit1.png \
-		../FinalProject/imagenes/canon.png \
 		../FinalProject/imagenes/fondo1.jpg \
-		../FinalProject/imagenes/puas.png
+		../FinalProject/imagenes/trampa.png \
+		../FinalProject/imagenes/newCircuito.png \
+		../FinalProject/imagenes/obstaculo1.jpg \
+		../FinalProject/imagenes/soldadorecortado.png \
+		../FinalProject/imagenes/trampalado.png \
+		../FinalProject/imagenes/soga.png \
+		../FinalProject/imagenes/man.jpg \
+		../FinalProject/imagenes/grenade.png \
+		../FinalProject/imagenes/canon.png \
+		../FinalProject/imagenes/elemento3maquina.png \
+		../FinalProject/imagenes/puas.png \
+		../FinalProject/imagenes/person.png
 	C:\Qt\6.2.4\mingw_64\bin\rcc.exe -name imagenes ..\FinalProject\imagenes.qrc -o release\qrc_imagenes.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -281,7 +285,7 @@ release/moc_enemigos.cpp: ../FinalProject/enemigos.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/qpen.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.4/mingw_64/bin/moc.exe
-	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -I"C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/FinalProject" -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\enemigos.h -o release\moc_enemigos.cpp
+	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/FinalProject -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\enemigos.h -o release\moc_enemigos.cpp
 
 release/moc_jugador.cpp: ../FinalProject/jugador.h \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMainWindow \
@@ -422,7 +426,7 @@ release/moc_jugador.cpp: ../FinalProject/jugador.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/qpen.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.4/mingw_64/bin/moc.exe
-	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -I"C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/FinalProject" -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\jugador.h -o release\moc_jugador.cpp
+	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/FinalProject -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\jugador.h -o release\moc_jugador.cpp
 
 release/moc_mainwindow.cpp: ../FinalProject/mainwindow.h \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMainWindow \
@@ -571,7 +575,7 @@ release/moc_mainwindow.cpp: ../FinalProject/mainwindow.h \
 		../FinalProject/escape.h \
 		release/moc_predefs.h \
 		C:/Qt/6.2.4/mingw_64/bin/moc.exe
-	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -I"C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/JuegoFinal/JuegoFinal/FinalProject" -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/ProyectoFinal/JuegoFinal/FinalProject -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\FinalProject\mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1130,7 +1134,8 @@ release/main.o: ../FinalProject/main.cpp ../FinalProject/mainwindow.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QIcon \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qtimer.h \
-		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasictimer.h
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QCoreApplication
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\FinalProject\main.cpp
 
 release/mainwindow.o: ../FinalProject/mainwindow.cpp ../FinalProject/mainwindow.h \
@@ -1321,6 +1326,7 @@ release/mainwindow.o: ../FinalProject/mainwindow.cpp ../FinalProject/mainwindow.
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qcalendar.h \
 		../FinalProject/movimientos.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QPointF \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h
@@ -1432,7 +1438,8 @@ release/movimientos.o: ../FinalProject/movimientos.cpp ../FinalProject/movimient
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringconverter.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qset.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/6.2.4/mingw_64/include/QtGui/qpainterpath.h
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpainterpath.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QPointF
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\movimientos.o ..\FinalProject\movimientos.cpp
 
 release/pared.o: ../FinalProject/pared.cpp ../FinalProject/pared.h \

@@ -52,12 +52,32 @@ private:
     enemigos *bitone;
     QPointF bitonePos;
     enemigos *trampa;
+    enemigos *trampa1;
+    enemigos *trampa2;
+    enemigos *trampa3;
+    enemigos *trampa4;
     QPointF trampaPos;
     enemigos *granada;
     QPointF granadaPos;
     enemigos *canon;
     QPointF canonPos;
+    enemigos *bala;
+    QPointF balaPos;
 
+
+    //Elementos nivel 1
+    enemigos *elemento;
+    QPointF elementoPos;
+
+    enemigos *elemento2;
+    QPointF elementoPos2;
+
+    enemigos *elemento3;
+    QPointF elementoPos3;
+
+    bool colisionConElemento1;
+    bool colisionConElemento2;
+    bool colisionConElemento3;
 
     //Movimientos
     qreal angle;   // Para el movimiento circular
