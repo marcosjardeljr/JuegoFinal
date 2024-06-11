@@ -5,6 +5,7 @@
 #include <QGraphicsPixmapItem>
 #include <QPixmap>
 #include <QGraphicsScene>
+#include <QPointF>
 
 class enemigos : public QObject, public QGraphicsPixmapItem
 {
@@ -14,10 +15,13 @@ public:
     //QObject *parent = nullptr indica que es hijo de la clase Qobjet
     explicit enemigos(QGraphicsScene* scene, QPixmap pixmap, qreal scale, QPointF pos, QObject *parent = nullptr);
     ~enemigos();
+    void moveTowards(const QPointF &target);
 
 private:
     //configuracion de la clase.
     void setup(QPixmap pixmap, qreal scale, QPointF pos);
+    qreal speed;
+    QGraphicsScene *scene2;
 
 signals:
 
