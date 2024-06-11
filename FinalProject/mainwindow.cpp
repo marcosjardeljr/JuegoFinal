@@ -507,5 +507,24 @@ void MainWindow::cambiarNivel() {
         QPixmap maloA(rutaApple);
         applePos = QPointF(400,220);
         apple = new enemigos(scene2, maloA, 0.06, applePos);
+
+        // Añadir enemigos a la escena
+        scene2->addItem(pildora);
+        scene2->addItem(perseguidor);
+        scene2->addItem(apple);
+        // Temporizador para actualizar las posiciones de los enemigos
+        QTimer *timer = new QTimer(this);
+        connect(timer, &QTimer::timeout, this, &MainWindow::updateEnemies);
+        timer->start(10);  // Aproximadamente 60 FPS
+
+
+
+
 }
 
+void MainWindow::updateEnemies() {
+    QPointF playerPos = mijugador->pos();
+    pildora->moveTowards(playerPos);
+    perseguidor->moveTowards(playerPos);
+    apple->moveTowards(playerPos);
+}

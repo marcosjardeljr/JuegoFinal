@@ -22,7 +22,7 @@ QRectF escape::boundingRect() const
 
 void escape::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    QPixmap tunel(":/imagenes/obstaculo2.jpg");
+    QPixmap tunel(":/imagenes/puerta.png");
     painter->drawPixmap(boundingRect(),tunel,tunel.rect());
 }
 

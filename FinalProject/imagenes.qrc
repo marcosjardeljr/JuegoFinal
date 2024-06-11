@@ -33,5 +33,6 @@
         <file>imagenes/elemento2maquina.png</file>
         <file>imagenes/elemento3maquina.png</file>
         <file>imagenes/balaSoldado.png</file>
+        <file>imagenes/puerta.png</file>
     </qresource>
 </RCC>
