@@ -26,7 +26,7 @@ private slots:
     void keyPressEvent(QKeyEvent *evento);
     void movEnemigos();
     void cambiarNivel();
-    void updateEnemies();
+    void actualizacionEnemigos();
 
 signals:
 

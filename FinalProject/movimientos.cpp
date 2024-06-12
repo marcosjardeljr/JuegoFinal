@@ -10,17 +10,7 @@ void movimientos::movimientoCircular(QGraphicsPixmapItem *bit, qreal &angle, QPo
     bit->setPos(x_ + posicionInicial.x(), y_ + posicionInicial.y());
     angle += 0.7;
 }
-/*
-void movimientos::movimientoEliptico(QGraphicsPixmapItem *bitone, qreal &angle2, QPointF posicionInicial)
-{
-    qreal radioX = 50;
-    qreal radioY = 30;
-    qreal x = radioX * cos(angle2);
-    qreal y = radioY * sin(angle2);
-    bitone->setPos(x + posicionInicial.x(), y + posicionInicial.y());
-    angle2 -= 0.5;
-}
-*/
+
 void movimientos::caidaLibre(QGraphicsPixmapItem *granada, QPointF initialPos)
 {
     granada->setPos(granada->pos().x(), granada->pos().y() + 5);
