@@ -33,7 +33,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -43,9 +43,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -69,10 +69,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\enemigos.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\enemigos.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/enemigos.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/enemigos.cpp"
 },
 {
     "arguments": [
@@ -108,7 +108,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -118,9 +118,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -144,10 +144,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\escape.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\escape.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/escape.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/escape.cpp"
 },
 {
     "arguments": [
@@ -183,7 +183,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -193,9 +193,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -219,10 +219,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\jugador.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\jugador.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/jugador.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/jugador.cpp"
 },
 {
     "arguments": [
@@ -258,7 +258,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -268,9 +268,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -294,10 +294,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\main.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\main.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/main.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/main.cpp"
 },
 {
     "arguments": [
@@ -333,7 +333,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -343,9 +343,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -369,10 +369,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\mainwindow.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\mainwindow.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/mainwindow.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -408,7 +408,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -418,9 +418,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -444,10 +444,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\movimientos.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\movimientos.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/movimientos.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/movimientos.cpp"
 },
 {
     "arguments": [
@@ -483,7 +483,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -493,9 +493,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -519,10 +519,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\pared.cpp"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\pared.cpp"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/pared.cpp"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/pared.cpp"
 },
 {
     "arguments": [
@@ -558,7 +558,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -568,9 +568,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -594,10 +594,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\enemigos.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\enemigos.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/enemigos.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/enemigos.h"
 },
 {
     "arguments": [
@@ -633,7 +633,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -643,9 +643,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -669,10 +669,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\escape.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\escape.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/escape.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/escape.h"
 },
 {
     "arguments": [
@@ -708,7 +708,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -718,9 +718,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -744,10 +744,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\jugador.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\jugador.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/jugador.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/jugador.h"
 },
 {
     "arguments": [
@@ -783,7 +783,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -793,9 +793,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -819,10 +819,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\mainwindow.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\mainwindow.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/mainwindow.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/mainwindow.h"
 },
 {
     "arguments": [
@@ -858,7 +858,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -868,9 +868,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -894,10 +894,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\movimientos.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\movimientos.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/movimientos.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/movimientos.h"
 },
 {
     "arguments": [
@@ -933,7 +933,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -943,9 +943,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -969,10 +969,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject\\pared.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject\\pared.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/FinalProject/pared.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/FinalProject/pared.h"
 },
 {
     "arguments": [
@@ -1008,7 +1008,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\FinalProject",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\FinalProject",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include",
         "-I",
@@ -1018,9 +1018,9 @@
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.2.4\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -1044,9 +1044,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\Usuario\\Documents\\Universidad\\Semestre 2024-1\\Teoria\\AUX-JuegoFinal\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "C:\\Users\\Usuario\\Documents\\Juegofinallll\\JuegoFinal\\build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
-    "directory": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/Usuario/Documents/Universidad/Semestre 2024-1/Teoria/AUX-JuegoFinal/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "directory": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Users/Usuario/Documents/Juegofinallll/JuegoFinal/build-FinalProject-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_mainwindow.h"
 }
 ]
