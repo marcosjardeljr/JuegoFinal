@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     mijugador = new jugador(scene);
 
 
-    QString rutaMalo1 = ":/imagenes/aviondeguerra.png";
+    /*QString rutaMalo1 = ":/imagenes/aviondeguerra.png";
     QPixmap malo1(rutaMalo1);
     avionPos = QPointF(360,140);
     avion = new enemigos(scene, malo1, 0.12, avionPos);
@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
     QString rutaMalo2 = ":/imagenes/soldadorecortado.png";
     QPixmap malo2(rutaMalo2);
     soldadoPos = QPointF(75,410);
-    soldado = new enemigos(scene, malo2, 0.04, soldadoPos);
+    soldado = new enemigos(scene, malo2, 0.04, soldadoPos);*/
 
     QString rutaMalo3 = ":/imagenes/bit0.png";
     QPixmap malo3(rutaMalo3);
@@ -55,10 +55,7 @@ MainWindow::MainWindow(QWidget *parent)
     granadaPos = QPointF(750,100);
     granada = new enemigos(scene, malo10, 0.02, granadaPos);
 
-    QString rutaMalo11= ":/imagenes/canon.png";
-    QPixmap malo11(rutaMalo11);
-    canonPos = QPointF(850,300);
-    canon = new enemigos(scene, malo11, 0.2, canonPos);
+
 
     QString rutaTrampa = ":/imagenes/trampa.png";
     QPixmap malo12(rutaTrampa);
@@ -211,13 +208,6 @@ void MainWindow::movEnemigos()
 
     }
 
-    movimientos::movimientoParabolico(canon, angle3);
-    if (mijugador->collidesWithItem(canon)){
-         QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
-         timer->stop();
-         exit(0);
-
-    }
 
     if (mijugador->collidesWithItem(trampa)){
          QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
@@ -294,8 +284,34 @@ void MainWindow::movEnemigos()
             return;  // Importante: salimos de la función para evitar operaciones adicionales después de cambiar de nivel
         }
     }
+
     }
+    if (level == true){
+
+
+        // Evaluamos colision con los enemigos
+        if (mijugador != nullptr && movimientos::EvaluarColisionMalos(mijugador, QList<QGraphicsItem*>(listaEnemigos.begin(), listaEnemigos.end()))) {
+            QMessageBox::about(this, "Adios", "\n\n Perdiste :(");
+            timer->stop();
+            exit(0);
+        }
+        if (soga != nullptr) {
+
+            // Si el túnel está visible, verifica la colisión
+            if (mijugador != nullptr && mijugador->collidesWithItem(soga)) {
+                QMessageBox::about(this, "Adios", "GANASTE!!!");
+                timer->stop();
+                exit(0);
+
+                return;
+            }
+        }
+    }
+
+
+
 }
+
 
 bool MainWindow::EvaluarColision(QGraphicsItem *item)
 {
@@ -495,7 +511,7 @@ void MainWindow::cambiarNivel() {
 
         QString rutaPerseguidor = ":/imagenes/person.png";
         QPixmap maloH(rutaPerseguidor);
-        perseguidorPos = QPointF(100,100);
+        perseguidorPos = QPointF(100,80);
         perseguidor = new enemigos(scene2, maloH, 0.04, perseguidorPos);
 
         QString rutaPsoga = ":/imagenes/soga.png";
@@ -517,8 +533,7 @@ void MainWindow::cambiarNivel() {
         connect(timer, &QTimer::timeout, this, &MainWindow::updateEnemies);
         timer->start(10);  // Aproximadamente 60 FPS
 
-
-
+     listaEnemigos = {pildora,perseguidor,apple};
 
 }
 
