@@ -1,0 +1,11 @@
+debug/enemigos.o
+debug/escape.o
+debug/jugador.o
+debug/main.o
+debug/mainwindow.o
+debug/movimientos.o
+debug/pared.o
+debug/qrc_imagenes.o
+debug/moc_enemigos.o
+debug/moc_jugador.o
+debug/moc_mainwindow.o

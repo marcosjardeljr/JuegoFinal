@@ -1,0 +1,11 @@
+release/enemigos.o
+release/escape.o
+release/jugador.o
+release/main.o
+release/mainwindow.o
+release/movimientos.o
+release/pared.o
+release/qrc_imagenes.o
+release/moc_enemigos.o
+release/moc_jugador.o
+release/moc_mainwindow.o
