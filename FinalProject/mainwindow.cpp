@@ -29,17 +29,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(timer, &QTimer::timeout, this, &MainWindow::movEnemigos);
     mijugador = new jugador(scene);
 
-
-    /*QString rutaMalo1 = ":/imagenes/aviondeguerra.png";
-    QPixmap malo1(rutaMalo1);
-    avionPos = QPointF(360,140);
-    avion = new enemigos(scene, malo1, 0.12, avionPos);
-
-    QString rutaMalo2 = ":/imagenes/soldadorecortado.png";
-    QPixmap malo2(rutaMalo2);
-    soldadoPos = QPointF(75,410);
-    soldado = new enemigos(scene, malo2, 0.04, soldadoPos);*/
-
     QString rutaMalo3 = ":/imagenes/bit0.png";
     QPixmap malo3(rutaMalo3);
     bitPos = QPointF(250,250);
@@ -299,7 +288,7 @@ void MainWindow::movEnemigos()
 
             // Si el túnel está visible, verifica la colisión
             if (mijugador != nullptr && mijugador->collidesWithItem(soga)) {
-                QMessageBox::about(this, "Adios", "GANASTE!!!");
+                QMessageBox::about(this, "Adios", "Alan Turing fallece el 7 de junio de 1954");
                 timer->stop();
                 exit(0);
 
@@ -425,7 +414,7 @@ void MainWindow::cambiarNivel() {
         scene2->addItem(mijugador);
 
         // Restablece la posición del jugador en el nuevo nivel
-        mijugador->setPos(100, 150);
+        mijugador->setPos(90, 150);
         qDebug() << "Se cambia de nivel efectivamente";
 
         //fila superior
@@ -530,16 +519,16 @@ void MainWindow::cambiarNivel() {
         scene2->addItem(apple);
         // Temporizador para actualizar las posiciones de los enemigos
         QTimer *timer = new QTimer(this);
-        connect(timer, &QTimer::timeout, this, &MainWindow::updateEnemies);
-        timer->start(10);  // Aproximadamente 60 FPS
+        connect(timer, &QTimer::timeout, this, &MainWindow::actualizacionEnemigos);
+        timer->start(7);
 
      listaEnemigos = {pildora,perseguidor,apple};
 
 }
 
-void MainWindow::updateEnemies() {
+void MainWindow::actualizacionEnemigos() {
     QPointF playerPos = mijugador->pos();
-    pildora->moveTowards(playerPos);
-    perseguidor->moveTowards(playerPos);
-    apple->moveTowards(playerPos);
+    pildora->fuerzadeAtraccion(playerPos);
+    perseguidor->fuerzadeAtraccion(playerPos);
+    apple->fuerzadeAtraccion(playerPos);
 }

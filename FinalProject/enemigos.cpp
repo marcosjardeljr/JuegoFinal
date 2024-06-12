@@ -20,11 +20,19 @@ void enemigos::setup(QPixmap pixmap, qreal scale, QPointF pos)
     this->setPos(pos);
 }
 
-void enemigos::moveTowards(const QPointF &target) {
-    QPointF direction = target - pos();
-    qreal length = qSqrt(qPow(direction.x(), 2) + qPow(direction.y(), 2));
-    if (length > 0) {
-        direction /= length;
-        setPos(pos() + direction * scale());
+void enemigos::fuerzadeAtraccion(const QPointF &objetivo) {
+    // Calcula la dirección hacia el objetivo restando la posición actual del enemigo
+    QPointF direccion = objetivo - pos();
+
+    // Calcula la longitud de la dirección usando la distancia euclidiana
+    qreal longitud = qSqrt(qPow(direccion.x(), 2) + qPow(direccion.y(), 2));
+
+    // Si la longitud es mayor que 0, normaliza la dirección y actualiza la posición del enemigo
+    if (longitud > 0) {
+        // Normaliza la dirección
+        direccion /= longitud;
+
+        // Actualiza la posición del enemigo moviéndolo en la dirección del objetivo
+        setPos(pos() + direccion * scale());
     }
 }

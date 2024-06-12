@@ -15,7 +15,7 @@ public:
     //QObject *parent = nullptr indica que es hijo de la clase Qobjet
     explicit enemigos(QGraphicsScene* scene, QPixmap pixmap, qreal scale, QPointF pos, QObject *parent = nullptr);
     ~enemigos();
-    void moveTowards(const QPointF &target);
+    void fuerzadeAtraccion(const QPointF &target);
 
 private:
     //configuracion de la clase.
