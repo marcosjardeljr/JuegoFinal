@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     const uint offsetsAndSize[16];
-    char stringdata0[83];
+    char stringdata0[91];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
@@ -36,12 +36,12 @@ QT_MOC_LITERAL(26, 10), // "QKeyEvent*"
 QT_MOC_LITERAL(37, 6), // "evento"
 QT_MOC_LITERAL(44, 11), // "movEnemigos"
 QT_MOC_LITERAL(56, 12), // "cambiarNivel"
-QT_MOC_LITERAL(69, 13) // "updateEnemies"
+QT_MOC_LITERAL(69, 21) // "actualizacionEnemigos"
 
     },
     "MainWindow\0keyPressEvent\0\0QKeyEvent*\0"
     "evento\0movEnemigos\0cambiarNivel\0"
-    "updateEnemies"
+    "actualizacionEnemigos"
 };
 #undef QT_MOC_LITERAL
 
@@ -82,7 +82,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->keyPressEvent((*reinterpret_cast< std::add_pointer_t<QKeyEvent*>>(_a[1]))); break;
         case 1: _t->movEnemigos(); break;
         case 2: _t->cambiarNivel(); break;
-        case 3: _t->updateEnemies(); break;
+        case 3: _t->actualizacionEnemigos(); break;
         default: ;
         }
     }
